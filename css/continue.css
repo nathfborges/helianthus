@@ -1,10 +1,12 @@
-html {
+body {
     background-image: url(../img/background.png);
     background-size: cover;
     background-position: center center;
     height: 1300px;
     background-color: aliceblue;
+    backdrop-filter: blur(14px);
 }
+
 
 #container {
     display: flex;
@@ -15,13 +17,12 @@ html {
 #logo {
     padding-top: 26px;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     flex: 1;
 }
 
 .logo-helianthus {
-    width: 200px;
-    height: 45px;
+    height: 31px;
 }
 
 @font-face {
@@ -36,39 +37,46 @@ html {
      color: #747474;
 }
 
-#container-text {
-    margin-top: 52px;
-    height: 225px;
-    margin-left: 10%;
-    margin-right: 10%;
+#container-info {
+    margin-top: 60px;
+    height: 628px;
+    width: 822px;
+    background-color: #FCFCFC;
+    align-self: center;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #979797;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+#logo-helianthus-cinza {
+    width: 152px;
+    align-self: flex-end;
+    margin-bottom: -78px;
+    margin-right: auto;
+    margin-left: -26px;
+}
+
+#container-image {
+    box-sizing: content-box;
+    justify-self: center;
+    align-self: center;
     flex: 1;
 }
 
-#container-text-left {
-     width: 50%;
-     height: 223.55px;
-     display: flex;
-     flex-direction: column;
-     flex:1;
+#container-image img{
+    height: 151px;
+    width: 324px;
+    justify-self: center;
 }
 
-#container-text-right {
-    width: 50%;
-    height: 223.55px;
-    display: flex;
-    margin-top: 0px;
-    flex-direction: column;
-    flex:1;
-}
 
-#title-content-left{
-     font-family: 'Inter Light';
-     font-size: 32px;
-     line-height: 39px;
-}
+
+
 
 @font-face {
     font-family: 'Inter Regular';
