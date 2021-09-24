@@ -1,0 +1,44 @@
+@import url('https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css');
+.form-control {
+  -webkit-transition: none;
+  transition: none;
+  width: 30px;
+  height: 46px;
+  text-align: center;
+  background-color: black;
+}
+
+.rounded {
+  border-radius: 3px;
+}
+
+.m-2 {
+  margin-top: 27px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.form-control:focus {
+  color: #3F4254;
+  background-color: #ffffff;
+  border-color: #884377;
+  outline: 0;
+}
+
+.form-control.form-control-solid {
+  background-color: #FFFFFF;
+  border-color: #979797;
+  border-width: 1px;
+  color: #000000;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+
+.form-control.form-control-solid:active,
+.form-control.form-control-solid.active,
+.form-control.form-control-solid:focus,
+.form-control.form-control-solid.focus {
+  background-color: #EBEDF3;
+  border-color: #EBEDF3;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}

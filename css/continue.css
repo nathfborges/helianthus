@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Regular'), url(../fonts/Inter-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Semibold'), url(../fonts/Inter-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Medium'), url(../fonts/Inter-Medium.ttf) format('truetype');
+}
+
 body {
     background-image: url(../img/background.png);
     background-size: cover;
@@ -28,12 +49,6 @@ body {
     margin-right: 30px;
 }
 
-@font-face {
-    font-family: 'Inter Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Inter Light'), url(../fonts/Inter-Light.ttf) format('truetype');
-}
 
 #container-info {
     margin-top: 60px;
@@ -43,7 +58,9 @@ body {
     background-color: #FCFCFC;
     align-self: center;
     display: grid;
-    grid-template-areas: "logo text button";
+    grid-template-areas: 
+    "text text"
+     "logo button";
     justify-content: center;
     border-style: solid;
     border-width: 1px;
@@ -56,8 +73,8 @@ body {
     width: 152px;
     align-self: flex-end;
     justify-self: baseline;
-    margin-bottom: -78px;
-    margin-left: -210px;
+    margin-bottom: -80px;
+    margin-left: -26px;
     grid-area: logo;
 }
 
@@ -67,30 +84,101 @@ body {
     flex-direction: column;
 }
 
-#container-center img{
+#container-center img {
     height: 151px;
     width: 324px;
     align-self: center;
 }
 
-@font-face {
-    font-family: 'Inter Semibold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Inter Semibold'), url(../fonts/Inter-SemiBold.ttf) format('truetype');
-}
 
-#text-container-center {
-    margin-right: 3%;
-    margin-left: 3%;
-    width: 100%;
-}
-#text-container-center p{
+#container-center h2 {
     margin-top: 42px;
     font-family: 'Inter Semibold';
     font-size: 16px;
     align-self: center;
     text-align: center; 
+    margin-right: 4%;
+    margin-left: 4%;
+    width: 100%;
+}
+
+#text-descriptive-container-center {
+    margin-left: 20.9%;
+    margin-right: 20.9%;
+    width: fit-content;
+
+}
+
+#text-descriptive-container-center p{
+    font-family: 'Inter Regular';
+    font-size: 13px;
+    text-align: center;
+    color: #606060;
+    margin-top: 20px;
+    text-align: center;
+    width: fit-content;
+    line-height: 17px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#OTPInput {
+    align-self: center;
+    justify-self: center;
+    flex: 1;
+}
+
+.form {
+    font-family: 'Inter Regular'; 
+    color: black; 
+    width: 28px; 
+    height: 50px; 
+    text-align: center; 
+    text-shadow: 0 0 0 gray; 
+    border: 1px solid #979797;
+    border-radius: 3px;
+    margin-top: 27px; 
+    margin-left: 5px; 
+    margin-right: 5px;
+    transition: none;
+    box-shadow: inset 0px 0px 2.7px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    outline: none;
+}
+
+#container-continue-button {
+    margin-top: 25px;
+    grid-area: button;
+    display: flex;
+    justify-self: right;
+    margin-top: auto;
+    margin-right: 40px;
+    margin-bottom: 6.75%;
+}
+
+#continue-button {
+    height: 38px;
+    width: 127px;
+    background-color: #FDE1CE;
+    border: 1px solid #EB5E00;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#continue-button-text span {
+    font-family: 'Inter Medium';
+    color: #CC5200;
+    font-size: 16px;
+}
+
+#continue-button-arrow {
+    margin-left: 11.5px;
 }
 
 @media (max-width: 600px) {
@@ -100,6 +188,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     #logo {
@@ -117,10 +206,17 @@ body {
         margin-right: 0px;
     }
 
+    #logo-helianthus-cinza {
+        margin-bottom: -80px;
+        margin-left: 0px;
+    }
+    
+
     #container-info {
         margin-top: 26px;
-        width: 90%;
+        width: 80%;
         padding-top: 0px;
+        height: 600px;
     }
 
     #container-center {
@@ -134,10 +230,18 @@ body {
         width: auto;
     }
 
-    #text-container-center p{
-        margin-top: 10%;
+    #container-center h2{
+        margin-top: 7%;
+        margin-left: 7%;
         text-align: center;
+        width: fit-content;
     }
+
+    #text-descriptive-container-center {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
     
 
 }
