@@ -53,7 +53,7 @@ for (let i = 0; i < inputs.length; i++) {
   *   This hidden input will have a name attribute and all other single character fields won't have a name attribute
   *   This is to ensure that only this hidden input field will be submitted when you submit the form */
 
-document.getElementById('otpSubmit').addEventListener("click", function() {
+document.getElementById('continue-button').addEventListener("click", function() {
   const inputs = document.querySelectorAll('#OTPInput > *[id]');
   let compiledOtp = '';
   for (let i = 0; i < inputs.length; i++) {
