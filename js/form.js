@@ -33,9 +33,6 @@ for (let i = 0; i < inputs.length; i++) {
     } else if (event.key != "ArrowLeft" && event.key != "ArrowRight") {
       inputs[i].setAttribute("type", "text");
       inputs[i].value = ''; // Bug Fix: allow user to change a random otp digit after pressing it
-      setTimeout(function() {
-        inputs[i].setAttribute("type", "password");
-      }, 1000); // Hides the text after 1 sec
     }
   });
   inputs[i].addEventListener('input', function() {
@@ -48,10 +45,6 @@ for (let i = 0; i < inputs.length; i++) {
   });
 
 }
-/*  This is to get the value on pressing the submit button
-  *   In this example, I used a hidden input box to store the otp after compiling data from each input fields
-  *   This hidden input will have a name attribute and all other single character fields won't have a name attribute
-  *   This is to ensure that only this hidden input field will be submitted when you submit the form */
 
 document.getElementById('continue-button').addEventListener("click", function() {
   const inputs = document.querySelectorAll('#OTPInput > *[id]');
@@ -62,5 +55,6 @@ document.getElementById('continue-button').addEventListener("click", function() 
   document.getElementById('otp').value = compiledOtp;
   event.preventDefault();
   console.log(compiledOtp);
+   window.location.href = "/wait.html"
   return true;
 });

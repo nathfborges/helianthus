@@ -12,12 +12,14 @@
     src: local('Inter Semibold'), url(../fonts/Inter-SemiBold.ttf) format('truetype');
 }
 
+
 @font-face {
-    font-family: 'Inter Extra Bold';
+    font-family: 'Inter Light';
     font-style: normal;
     font-weight: normal;
-    src: local('Inter Semibold'), url(../fonts/Inter-ExtraBold.ttf) format('truetype');
+    src: local('Inter Light'), url(../fonts/Inter-Light.ttf) format('truetype');
 }
+
 
 @font-face {
     font-family: 'Inter Medium';
@@ -27,10 +29,10 @@
 }
 
 @font-face {
-    font-family: 'Inter Light';
+    font-family: 'Inter Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Inter Light'), url(../fonts/Inter-Light.ttf) format('truetype');
+    src: local('Inter Medium'), url(../fonts/Inter-Bold.ttf) format('truetype');
 }
 
 a {
@@ -41,7 +43,6 @@ body {
     background-image: url(../img/background.png);
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
     height: 1300px;
     background-color: aliceblue;
     backdrop-filter: blur(14px);

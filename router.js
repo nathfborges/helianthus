@@ -1,6 +1,6 @@
 'use strict';
 
-function Router(routes) {
+module.exports = function Router(routes) {
     try {
         if (!routes) {
             throw 'error: routes param is mandatory';
@@ -10,7 +10,6 @@ function Router(routes) {
     } catch (e) {
         console.error(e);   
     }
-}
 
 Router.prototype = {
     routes: undefined,
@@ -58,4 +57,5 @@ Router.prototype = {
             xhttp.send();
         })(this);
     }
+};
 };
