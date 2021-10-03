@@ -1,25 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/principal.css">
-    <link rel="stylesheet" type="text/css" href="../css/continue.css">
-    <title>Helianthus</title>
-</head>
-
-<body>
-    <div id="main">
-        <div id="content">
-            <div id="header">
-                <img id="logo-helianthus" src="../img/logo.png">
+<template>
+  <div>
+    <div id="container">
+            <div id="logo">
+                <img class="logo-helianthus" src="../assets/img/logo.svg">
             </div>
 
-            <div id="main-container">
-                <div id="center-container">
-                    <img src="../img/locate-helianthus-id.png">
+            <div id="container-info">
+                <img id="logo-helianthus-cinza" src="../assets/img/logoCinza.svg">
+                <div id="container-center">
+                    <img src="../assets/img/helianthusId.png">
                     <h2>Para continuar, digite o identificador único do dispositivo.</h2>
                     <form>
                         <div class="flex justify-center " id="OTPInput">
@@ -36,14 +25,18 @@
                         <div id="continue-button-text">
                             <span>Continuar</span>
                         </div>
-                        <img id="continue-button-arrow" src="../img/arrow.svg" width="11" height="11" />
+                        <img id="continue-button-arrow" src="../assets/img/arrow.svg" width="11" height="11" />
                     </a>
                 </div>
             </div>
         </div>
-    </div>
+  </div>
+</template>
 
-    <script src="../js/form.js"></script>
-</body>
+<script>
+</script>
 
-</html>
+<style>
+@import '../assets/css/reset.css';
+@import '../assets/css/continue.css';
+</style>

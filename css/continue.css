@@ -1,92 +1,17 @@
-@font-face {
-    font-family: 'Inter Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Inter Regular'), url(../fonts/Inter-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter Semibold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Inter Semibold'), url(../fonts/Inter-SemiBold.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Inter Medium'), url(../fonts/Inter-Medium.ttf) format('truetype');
-}
-
-body {
-    background-image: url(../img/background.png);
-    background-size: cover;
-    background-position: center center;
-    height: 1300px;
-    background-color: aliceblue;
-    backdrop-filter: blur(14px);
-}
-
-#container1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-
-#logo-1 {
-    padding-top: 26px;
-    display: flex;
-    justify-content: right;
-    flex: 1;
-    width: 100%;
-}
-
-.logo-helianthus-1 {
-    height: 31px;
-    margin-right: 30px;
-}
-
-#container-info {
-    margin-top: 60px;
-    padding-top: 74px;
-    height: 628px;
-    width: 60.8%;
-    background-color: #FCFCFC;
-    align-self: center;
-    display: grid;
-    grid-template-areas: "text text" "logo button";
-    justify-content: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #979797;
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-#logo-helianthus-cinza {
-    width: 152px;
-    align-self: flex-end;
-    justify-self: baseline;
-    margin-bottom: -80px;
-    margin-left: -26px;
-    grid-area: logo;
-}
-
-#container-center {
+#center-container {
+    margin-top: 74px;
     grid-area: text;
     display: flex;
-    flex-direction: column;
-}
+    flex-direction: center;
+} 
 
-#container-center img {
+#center-container img {
     height: 151px;
     width: 324px;
     align-self: center;
 }
 
-#container-center h2 {
+#center-container h2 {
     margin-top: 42px;
     font-family: 'Inter Semibold';
     font-size: 16px;
@@ -145,7 +70,6 @@ form {
 
 #container-continue-button {
     margin-top: 25px;
-    grid-area: button;
     display: flex;
     justify-self: right;
     margin-top: auto;
@@ -170,58 +94,55 @@ form {
     font-size: 16px;
 }
 
+#logo-helianthus-cinza {
+    margin-right: auto;
+    margin-bottom: -73px;
+}
+
 #continue-button-arrow {
     margin-left: 11.5px;
 }
 
-@media (max-width: 600px) {
-    #container {
+  #content {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    #logo {
+    #header {
         padding-top: 26px;
         display: flex;
         justify-content: center;
         flex: 1;
         align-items: center;
     }
-    .logo-helianthus {
+    #logo-helianthus {
         width: 200px;
         height: 45px;
         justify-content: center;
         margin-right: 0px;
     }
-    #logo-helianthus-cinza {
-        margin-bottom: -80px;
-        margin-left: 0px;
-    }
-    #container-info {
-        margin-top: 26px;
-        width: 80%;
-        padding-top: 0px;
-        height: 600px;
-    }
-    #container-center {
-        margin-top: 10%;
+
+    #center-container{
         align-items: center;
         justify-self: center;
+        flex: 1;
+        margin-top: 40px;
     }
-    #container-center img {
-        height: 120px;
-        width: auto;
+
+    #center-container h2 {
+        margin-top: 17px;
     }
-    #container-center h2 {
-        margin-top: 7%;
-        margin-left: 7%;
-        text-align: center;
-        width: fit-content;
+
+    #main-container {
+        width: 93%;
+        flex-direction: column;
     }
+    
     #text-descriptive-container-center {
         margin-left: 10%;
         margin-right: 10%;
-    }
+    }@media (max-width: 600px) {
+  
 }

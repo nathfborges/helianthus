@@ -1,26 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/continue.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/principal.css">
-    <title>Helianthus</title>
-</head>
-
-<body>
-    <div id="main">
+<template>
+  <div>
         <div id="container">
             <div id="logo">
-                <img class="logo-helianthus" src="img/logo.png">
+                <img class="logo-helianthus" src="../assets/img/logo.svg">
             </div>
 
             <div id="container-text">
                 <div id="container-text-left">
-                    <div class="title" id="title-content-left">
+                    <div id="title-content-left">
                         <h1>Um dispositivo IoT com sensores de corrente e de tensão</h1>
                     </div>
                     <div class="text" id="text-content-left">
@@ -44,25 +31,26 @@
                     </div>
 
                     <div id="container-continue-button">
-                        <a id="continue-button" href="/#continue">
+                        <a id="continue-button" href="/continue">
                             <div id="continue-button-text">
                                 <span>Continuar</span>
                             </div>
-                            <img id="continue-button-arrow" src="../img/arrow.svg" width="11" height="11" />
+                            <img id="continue-button-arrow" src="../assets/img/arrow.svg" width="11" height="11" />
                         </a>
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
+  </div>
+</template>
 
-    <script type="module" src="/js/continue.js"></script>
-    <script src="/js/form.js"></script>
-    <script type="module" src="route.js"></script>
-    <script type="module" src="router.js"></script>
-    <script src="app.js"></script>
+<script>
 
-</body>
 
-</html>
+</script>
+
+<style>
+@import '../assets/css/reset.css';
+@import '../assets/css/style.css';
+</style>

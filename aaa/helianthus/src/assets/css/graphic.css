@@ -1,0 +1,87 @@
+.tooltipDesign {
+    background: #FFFFFF;
+    height: fit-content;
+    width: 260px;
+    border-radius: 8px;
+    opacity: 1;
+    border: #C4C4C4 solid 1px;
+    position: absolute;
+}
+
+.tooltipath{
+    fill:rgba(255,0,0,1);
+  }
+
+.tooltipul {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.tooltipul li {
+    display: grid;
+    grid-template-areas: "hora tensao corrente"
+    "potencia potencia potencia";
+    flex-direction: column;
+}
+
+.spanHour {
+    grid-area: "hora";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-right: #C4C4C4 solid 1px;
+}
+
+.spanHour > span {
+    font-family: 'Inter Extra Bold';
+    font-size: 11px;
+    color: #727272;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+
+.spanHour > p {
+    margin-top: 5px;
+    font-family: 'Inter Light';
+    font-size: 15px;
+    color: black;
+}
+
+.spanValues {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+
+
+.spanValues > span {
+    font-family: 'Inter Extra Bold';
+    font-size: 11px;
+    color: #727272;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.spanValues > p {
+    margin-top: 5px;
+    font-family: 'Inter Light';
+    font-size: 15px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+

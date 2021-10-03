@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Regular'), url(../fonts/Inter-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Semibold'), url(../fonts/Inter-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Extra Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Semibold'), url(../fonts/Inter-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Medium'), url(../fonts/Inter-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Light'), url(../fonts/Inter-Light.ttf) format('truetype');
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1300px;
+    background-color: aliceblue;
+    backdrop-filter: blur(14px);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#header {
+    margin-top: 26px;
+    display: flex;
+    justify-content: right;
+    flex: 1;
+    width: 100%;
+}
+
+#logo-helianthus {
+    height: 31px;
+    margin-right: 30px;
+}
+
+#main-container {
+    margin-top: 60px;
+    height: 628px;
+    width: 61.2%;
+    background-color: #FCFCFC;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #979797;
+    border-radius: 3px;
+    overflow: hidden;
+    background-image: url(../img/logoCinza.svg);
+    background-repeat: no-repeat;
+    background-position: -27px 418px;
+}
+
+#logo-helianthus-cinza {
+    width: 152px;
+    align-self: flex-end;
+    justify-self: baseline;
+    margin-bottom: -90px;
+    margin-left: -26px;
+}
+
+#center-container {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+}
