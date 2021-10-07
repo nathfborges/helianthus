@@ -1,4 +1,4 @@
-import AbstractView from "./AbstractView.js";
+import AbstractView from "./abstractview.js";
 
 export default class extends AbstractView {
     constructor(params) {
@@ -24,16 +24,11 @@ export default class extends AbstractView {
                                 acompanhar todo o consumo de energia elétrica.</p>
                         </div>
                     </div>
-                    <!-- aparecer no desktop -->
+
                     <div id="vertical-line">
                         <hr>
                     </div>
-
-                    <!-- aparecer no mobile -->
-                    <div id="horizontal-line">
-                        <hr>
-                    </div>
-
+       
                     <div id="container-text-right">
                         <div id="text-content-right">
                             <h2>Possui um dispositivo?</h2>
@@ -42,7 +37,7 @@ export default class extends AbstractView {
                         </div>
 
                         <div id="container-continue-button">
-                            <a id="continue-button" href="/continue">
+                            <a id="continue-button" href="/device-id">
                                 <div id="continue-button-text">
                                     <span>Continuar</span>
                                 </div>

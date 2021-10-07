@@ -1,27 +1,27 @@
+let inputId = ''
+
 window.onload = function () {
-    if (location.pathname != '/continue') {
-      return;
-    }
-    console.log('aaaaaaaaaa');
-    const $otp_length = 5;
+  if (location.pathname != '/device-id') {
+    return;
+  }
 
-    const element = document.getElementById('OTPInput');
+  const $otp_length = 5;
 
-    for (let i = 0; i < $otp_length; i++) {
-    let inputField = document.createElement('input'); // Creates a new input element
+  const element = document.getElementById('OTPInput');
+
+  for (let i = 0; i < $otp_length; i++) {
+    let inputField = document.createElement('input');
     inputField.className = "form border.focus";
-    // Do individual OTP input styling here;
-    inputField.id = 'otp-field' + i; // Don't remove
-    inputField.maxLength = 1; // Sets individual field length to 1 char
-    element.appendChild(inputField); // Adds the input field to the parent div (OTPInput)
-    }
 
+    inputField.id = 'otp-field' + i; 
+    inputField.maxLength = 1; 
+    element.appendChild(inputField); 
+  }
 
-    /*  This is for switching back and forth the input box for user experience */
-    const inputs = document.querySelectorAll('#OTPInput > *[id]');
+  const inputs = document.querySelectorAll('#OTPInput > *[id]');
 
-    for (let i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener('keydown', function(event) {
+  for (let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('keydown', function (event) {
       if (event.key === "Backspace") {
 
         if (inputs[i].value == '') {
@@ -38,11 +38,11 @@ window.onload = function () {
         inputs[i + 1].focus();
       } else if (event.key != "ArrowLeft" && event.key != "ArrowRight") {
         inputs[i].setAttribute("type", "text");
-        inputs[i].value = ''; // Bug Fix: allow user to change a random otp digit after pressing it
+        inputs[i].value = ''; 
       }
     });
-    inputs[i].addEventListener('input', function() {
-      inputs[i].value = inputs[i].value.toUpperCase(); // Converts to Upper case. Remove .toUpperCase() if conversion isnt required.
+    inputs[i].addEventListener('input', function () {
+      inputs[i].value = inputs[i].value.toUpperCase();
       if (i === inputs.length - 1 && inputs[i].value !== '') {
         return true;
       } else if (inputs[i].value !== '') {
@@ -50,9 +50,10 @@ window.onload = function () {
       }
     });
 
-    }
+  }
 
-    document.getElementById('continue-button').addEventListener("click", function() {
+  const button = document.getElementById('continue-button-c');
+    button.addEventListener("click", function () {
     const inputs = document.querySelectorAll('#OTPInput > *[id]');
     let compiledOtp = '';
     for (let i = 0; i < inputs.length; i++) {
@@ -60,7 +61,7 @@ window.onload = function () {
     }
     document.getElementById('otp').value = compiledOtp;
     event.preventDefault();
-    console.log(compiledOtp);
-    return true;
-    });
+    inputId = compiledOtp;
+    console.log(inputId)
+  });
 }

@@ -1,4 +1,4 @@
-import AbstractView from "./AbstractView.js";
+import AbstractView from "./abstractview.js";
 
 export default class extends AbstractView {
     constructor(params) {
@@ -16,8 +16,7 @@ export default class extends AbstractView {
                 <div id="main-container">
                     <div id="center-container">
                         <div id="container-chart">
-                        <canvas id="chart" width="758" height="400"></canvas>
-                       
+                        <canvas id="diary-chart" width="758" height="400"></canvas>
                         </div>
                     </div>
             </div>

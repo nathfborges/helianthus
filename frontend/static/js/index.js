@@ -1,7 +1,7 @@
-import Home from "./views/Home.js";
-import Continue from "./views/Continue.js";
-import Waiting from "./views/Waiting.js";
-import consumptionChart from "./views/consumptionChart.js";
+import Home from "./views/home.js";
+import DeviceId from "./views/deviceid.js";
+import Waiting from "./views/waiting.js";
+import consumptionChart from "./views/chart.js";
 
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
@@ -23,7 +23,7 @@ const navigateTo = url => {
 const router = async () => {
     const routes = [
         { path: "/", view: Home },
-        { path: "/continue", view: Continue },
+        { path: "/device-id", view: DeviceId },
         { path: "/waiting", view: Waiting },
         { path: "/chart", view: consumptionChart }
     ];

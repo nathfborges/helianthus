@@ -228,7 +228,7 @@ const config = {
 
 window.addEventListener('load', function() {
   if (location.pathname == '/chart') {
-    create_chart('chart');
+    create_chart('diary-chart');
   }
 })
 
